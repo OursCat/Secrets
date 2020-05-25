@@ -1,0 +1,21 @@
+<%- include('header') %>
+
+<body>
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <form id='form' action="/register" method="POST">
+        <div class="content-register">
+            <input class='input' type="text" name="username" id='name' placeholder="Username" required>
+            <input class='input' type="password" name="password" placeholder="Password" id="password">
+            <input class='input' type="password" name="password2" id="password2" placeholder="Confirm Password"
+                required>
+            <button class="btn third" type="submit">Sign
+                up</button>
+            <span id='error'></span>
+        </div>
+    </form>
+    <p>Already have an account? <a href="/"><span><strong>Log In</strong></span></a></p>
+    <script src='/public/register.js'></script>
+</body>
+
+</html>

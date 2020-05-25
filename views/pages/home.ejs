@@ -1,0 +1,31 @@
+<%- include('header') %>
+
+<body>
+    <h1><i class="fas fa-key"></i>Secrets</h1>
+    <p>Don't keep your secrets, share them anonymously!</p>
+    <div class="homeContainer">
+        <form action="/" method="POST">
+            <div class="content">
+                <h2>Log In to Your Account</h2>
+                <input class='input' type="text" name="username" placeholder="Username" required>
+                <input class='input' type="text" name="password" placeholder="Password" required>
+                <div class='check'><input type="checkbox" name="remember" id='checkbox'>
+                    <label for="checkbox"> Remember Me</label>
+                </div>
+                <button class="btn third" type="submit">Log In</button>
+                <p>Need an account? <a href="/register"><span><strong>Sign up</strong></span></a></p>
+            </div>
+        </form>
+        <div class='socialLogin'>
+            <h3>Or</h3>
+            <a href="/auth/google"><button class="loginBtn loginBtn--google">
+                    Log in with Google &nbsp &nbsp &nbsp
+                </button></a>
+            <a href="/auth/facebook"><button class="loginBtn loginBtn--facebook">
+                    Continue With Facebook
+                </button></a>
+        </div>
+    </div>
+</body>
+
+</html>

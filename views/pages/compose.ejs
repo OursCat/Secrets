@@ -1,0 +1,15 @@
+<%- include('header') %>
+
+<body>
+    <div class='composeContainer'>
+        <h1>Share your secrets</h1>
+        <form action="/compose" method="POST">
+            <textarea name="compose" id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+            <a href="/secret"><button type='button' class='cancel'>Cancel</button></a>
+            <button type='submit' class='post'>Post</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
